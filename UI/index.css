@@ -2,13 +2,13 @@
     background-color: darkred !important;
 }
 
-.right-element{
+/* .right-element{
     margin-right:0;
-}
+} */
 
 .navbar-nav > li{
-    padding-left:20px;
-    padding-right: 1px;
+    padding-left:5px;
+    padding-right: 2px;
     margin-left:0px;
     margin-right:1px;
   }
@@ -24,8 +24,8 @@
  /* .container 
  {
      /* background-color: black; */
-     height: 400px;
-     width: 1000px; */
+     /* height: 400px;
+     width: 1000px; */ */
  }
  .carousel-inner,
  .carousel-item > img {
@@ -113,4 +113,40 @@
       .form-group > a{
         color: black !important;
 
+      }
+      .nav-link{
+
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+      .badge-notification {
+        position: relative;
+        margin-right: 10px;
+      }
+      .badge-notification[data-badge]::after {
+        content: attr(data-badge);
+          position: absolute;
+          top: -11px;
+          right: -10px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 22px;
+          height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+        font-weight: 600;
+          border-radius: 50%;
+        background: var(--secondary);
+        color: #fff;
+      }
+      span.badge-notification {
+        margin-right: 24px;
+      }
+      span.badge-notification[data-badge]::after {
+        top: -11px;
+        right: -24px;
       }
