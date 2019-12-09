@@ -67,3 +67,50 @@
     width: 613px;
     height: 400px;
 }
+..parent {
+    width: 80%;
+
+    height: 200px;
+    background: aqua;
+    margin: auto;
+    padding: 10px;
+}
+.one {
+    width: 20%;
+    height: 1000px;
+    background: whitesmoke ;
+    float: right;
+}
+.two {
+    /* margin-left: 15%; */
+    height: 1000px;
+        /* float: left; */
+    background-image:url("images_temp/Music\ vector1.jpg") ;
+    background-size: 100%;
+}
+
+.form-rounded {
+    border-radius: 1rem;
+    }
+
+    .btn-primary {
+        font-family: Raleway-SemiBold;
+        font-size: 13px;
+        color: rgba(58, 133, 191, 0.75);
+        letter-spacing: 1px;
+        line-height: 15px;
+        border: 2px solid rgba(58, 133, 191, 0.75);
+        border-radius: 40px;
+        background: transparent;
+        transition: all 0.3s ease 0s;
+      }
+      
+      .btn-primary:hover {
+        color: #FFF;
+        background: rgba(58, 133, 191, 0.75);
+        border: 2px solid rgba(58, 133, 191, 0.75);
+      }
+      .form-group > a{
+        color: black !important;
+
+      }
