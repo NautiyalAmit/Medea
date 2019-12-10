@@ -128,14 +128,14 @@
       }
       .badge-notification[data-badge]::after {
         content: attr(data-badge);
-          position: absolute;
-          top: -11px;
-          right: -10px;
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 22px;
-          height: 22px;
+        position: absolute;
+        top: -11px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 22px;
+        height: 22px;
         line-height: 22px;
         font-size: 12px;
         font-weight: 600;
