@@ -67,7 +67,7 @@
     width: 613px;
     height: 400px;
 }
-..parent {
+.parent {
     width: 80%;
 
     height: 200px;
@@ -82,12 +82,18 @@
     float: right;
 }
 .two {
-    /* margin-left: 15%; */
-    height: 1000px;
-        /* float: left; */
     background-image:url("images_temp/Music\ vector1.jpg") ;
     background-size: 100%;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 570px) {
+    .navbar-nav{
+      float:left !important;
+    }
+}
+
 
 .form-rounded {
     border-radius: 1rem;
