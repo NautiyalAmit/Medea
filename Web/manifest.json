@@ -3,10 +3,10 @@
     "short_name": "Medea",
     "theme_color": "#2196f3",
     "background_color": "#2196f3",
-    "display": "browser",
+    "display": "standalone",
     "description" : "progressive web application for media streaming ",
-    "Scope": "/",
-    "start_url": "../Web/index.html",
+    "scope": "/",
+    "start_url": "http://127.0.0.1:5500/Web/index.html",
     "icons": [
       {
         "src": "images/icons/icon-72x72.png",
