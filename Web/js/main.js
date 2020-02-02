@@ -1,4 +1,4 @@
-// Register the service worker 
+///Register the service worker 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('js/service-worker.js')
     .then(reg => console.log('service worker: registered'))
