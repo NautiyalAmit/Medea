@@ -1,10 +1,17 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<title>Medea</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--Start--Safari on iOS doesn't support the web app manifest (yet), so we need to add the traditional meta tags-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Weather PWA">
+	<link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+   <!--end---Safari on iOS doesn't support the web app manifest (yet), so we need to add the traditional meta tags-->
+
 	<meta name="keywords" content="Medea" />
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -20,12 +27,33 @@
 	<!-- //lined-icons -->
 	<!-- Meters graphs -->
 	<script src="js/jquery-2.1.4.js"></script>
+	<!--------------------------------------------------------PWA SCRIPTS starts-------------------------------------------->
+	<!--geolocation-->
+	<script src="https://unpkg.com/pwabuilder-components@latest"></script>
+	<pwb-geolocation></pwb-geolocation>
 
+	<!--Copy data to clipboard-->
+	<!-- <script src="https://unpkg.com/pwabuilder-components@latest"></script>
+	<pwb-clipboard texttocopy="Hello World"></pwb-clipboard> -->
+
+	<!--Install  PWA from the browser-->
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
+	<pwa-install></pwa-install>
+
+	<!--Adaptive Cards-->
+	<!-- <script src="https://unpkg.com/pwabuilder-components@latest"></script>
+	<pwb-adapcard></pwb-adapcard> -->
+	<!--------------------------------------------------------PWA SCRIPTS ends----------------------------------------------------->
+
+	<!-----add manifest file for PWA-->
+	<link rel="manifest" href="../Web/manifest.json">
 
 </head>
 <!-- /head layout  -->
 
-<body class="sticky-header left-side-collapsed" onload="initMap()">
+<body class="sticky-header left-side-collapsed">
+	<!--add main js file for pwa-->
+	<script src="js/main.js"></script>
 	<section>
 		<!-- left side start-->
 		<div class="left-side sticky-left-side">
@@ -61,7 +89,7 @@
 							<li><a href="radio.html">All Songs</a></li>
 						</ul>
 					</li>
-					
+
 				</ul>
 				<!--sidebar nav end-->
 			</div>
@@ -481,8 +509,8 @@
 											style="width: 480px; height: 270px;"><img id="jp_poster_0"
 												src="video/play1.png"
 												style="width: 480px; height: 270px; display: inline;"><video
-												id="jp_video_0" preload="metadata"
-												title="1. Ellie-Goulding" style="width: 0px; height: 0px;"></video>
+												id="jp_video_0" preload="metadata" title="1. Ellie-Goulding"
+												style="width: 0px; height: 0px;"></video>
 										</div>
 										<div class="jp-gui">
 											<div class="jp-video-play" style="display: block;">
@@ -736,172 +764,172 @@
 								<div class="clearfix"></div>
 							</div>
 							--//end-pricing-tables-->
-						</div>
 					</div>
-					<!--//music-right-->
-					<div class="clearfix"></div>
-					<!-- /w3l-agile-its -->
 				</div>
-				<!--body wrapper start-->
-
-				<div class="review-slider">
-					<div class="tittle-head">
-						<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
-						<div class="clearfix"> </div>
-					</div>
-					<ul id="flexiselDemo1">
-						<li>
-							<a href="single.html"><img src="images/v1.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Adele21
-							</div>
-							<div class="date-city">
-								<h5>Dec-12-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v2.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>EnriQue</h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-1-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v3.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Shomlock</h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-13-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v4.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Stuck on a feeling</h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-3-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v5.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Ricky Martine </h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-3-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v6.jpg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Ellie Goluding </h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-04-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="single.html"><img src="images/v6.jpeg" alt="" /></a>
-							<div class="slide-title">
-								<h4>Fifty Shades </h4>
-							</div>
-							<div class="date-city">
-								<h5>Dec-05-19</h5>
-								<div class="buy-tickets">
-									<a href="single.html">READ MORE</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<script type="text/javascript">
-						$(window).load(function () {
-
-							$("#flexiselDemo1").flexisel({
-								visibleItems: 5,
-								animationSpeed: 1000,
-								autoPlay: true,
-								autoPlaySpeed: 3000,
-								pauseOnHover: false,
-								enableResponsiveBreakpoints: true,
-								responsiveBreakpoints: {
-									portrait: {
-										changePoint: 480,
-										visibleItems: 2
-									},
-									landscape: {
-										changePoint: 640,
-										visibleItems: 3
-									},
-									tablet: {
-										changePoint: 800,
-										visibleItems: 4
-									}
-								}
-							});
-						});
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-				</div>
+				<!--//music-right-->
+				<div class="clearfix"></div>
+				<!-- /w3l-agile-its -->
 			</div>
-			<div class="clearfix"></div>
-			<!--body wrapper end-->
-			<!--  -->
+			<!--body wrapper start-->
+
+			<div class="review-slider">
+				<div class="tittle-head">
+					<h3 class="tittle">Featured Albums <span class="new"> New</span></h3>
+					<div class="clearfix"> </div>
+				</div>
+				<ul id="flexiselDemo1">
+					<li>
+						<a href="single.html"><img src="images/v1.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Adele21
+						</div>
+						<div class="date-city">
+							<h5>Dec-12-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v2.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>EnriQue</h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-1-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v3.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Shomlock</h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-13-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v4.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Stuck on a feeling</h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-3-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v5.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Ricky Martine </h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-3-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v6.jpg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Ellie Goluding </h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-04-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="single.html"><img src="images/v6.jpeg" alt="" /></a>
+						<div class="slide-title">
+							<h4>Fifty Shades </h4>
+						</div>
+						<div class="date-city">
+							<h5>Dec-05-19</h5>
+							<div class="buy-tickets">
+								<a href="single.html">READ MORE</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<script type="text/javascript">
+					$(window).load(function () {
+
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 5,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,
+							pauseOnHover: false,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: {
+								portrait: {
+									changePoint: 480,
+									visibleItems: 2
+								},
+								landscape: {
+									changePoint: 640,
+									visibleItems: 3
+								},
+								tablet: {
+									changePoint: 800,
+									visibleItems: 4
+								}
+							}
+						});
+					});
+				</script>
+				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!--body wrapper end-->
+		<!--  -->
 		</div>
 		<!--body wrapper end-->
 		<div class="footer two">
 			<div class="footer-grid">
 				<h3>Navigation</h3>
 				<ul class="list1">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="radio.html">All Songs</a></li>
-				  <li><a href="browse.html">Albums</a></li>
-				  <li><a href="radio.html">New Collections</a></li>
-				  <li><a href="blog.html">Blog</a></li>
-				  <li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="radio.html">All Songs</a></li>
+					<li><a href="browse.html">Albums</a></li>
+					<li><a href="radio.html">New Collections</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 			<div class="footer-grid">
-				
+
 			</div>
 			<div class="footer-grid">
 				<h3>Our Support</h3>
 				<ul class="list1">
-				  <li><a href="contact.html">Contact Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
-			  </div>
-				  <div class="footer-grid">
-					
-				 </div>
-				 <div class="footer-grid footer-grid_last">
-					<h3>About Us</h3>
-					<p class="footer_desc">Medea Responsive web Streaming App</p>
-					<p class="f_text">Phone:  &nbsp;&nbsp;&nbsp;00-111-3333</p>
-					<p class="email">Email : &nbsp;<span><a href="mailto:medea@medea.com">medea(at)medea.com</a></span></p>	
-				</div>
-				 <div class="clearfix"> </div>
 			</div>
+			<div class="footer-grid">
+
+			</div>
+			<div class="footer-grid footer-grid_last">
+				<h3>About Us</h3>
+				<p class="footer_desc">Medea Responsive web Streaming App</p>
+				<p class="f_text">Phone: &nbsp;&nbsp;&nbsp;00-111-3333</p>
+				<p class="email">Email : &nbsp;<span><a href="mailto:medea@medea.com">medea(at)medea.com</a></span></p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
 		</div>
 		<!--footer section start-->
 
@@ -909,20 +937,10 @@
 		<!-- -->
 		<!-- main content end-->
 	</section>
-
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.js"></script>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="/__/firebase/7.6.0/firebase-app.js"></script>
-
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="/__/firebase/7.6.0/firebase-analytics.js"></script>
-
-	<!-- Initialize Firebase -->
-	<script src="/__/firebase/init.js"></script>
+<!------firebase scripts starts----->
+<!-- add here -->
+<!------firebase scripts end----->
+	
 </body>
 
 </html>
