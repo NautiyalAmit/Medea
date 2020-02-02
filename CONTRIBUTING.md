@@ -1,2 +1,0 @@
-Amit NAutiyal
-Tarun Bhatia 
