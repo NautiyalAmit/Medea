@@ -50,8 +50,16 @@
 	<!--------------------------------------------------------PWA SCRIPTS ends----------------------------------------------------->
 
 	<!-----add manifest file for PWA-->
+<<<<<<< Updated upstream
 	<link rel="manifest" href="/manifest.json">
 
+=======
+	<link rel="manifest" href="../Web/manifest.json">
+	<script src="./shaka_player/shaka-player/dist/shaka-player.compiled.js"></script>
+  <!-- Your application source: -->
+	<script src="./shaka_player/shaka-player/myapp.js"></script>
+	<script src="C:\Users\Tarun\Desktop\Medea_TarunBranch\Medea_firebase\public\shaka_player\shaka-player/myapp.js"></script>
+>>>>>>> Stashed changes
 
 </head>
 <!-- /head layout  -->
@@ -505,7 +513,7 @@
 					<!--/music-right-->
 					<div class="music-right">
 						<!--/video-main-->
-						<div class="video-main">
+						<!-- <div class="video-main">
 							<div class="video-record-list">
 								<div id="jp_container_1" class="jp-video jp-video-270p" role="application"
 									aria-label="media player">
@@ -611,10 +619,19 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- script for play-list -->
+						<div class="col-md-12" id = "player">
+   
+							<video id="video"
+							width="1000"
+							poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+							controls autoplay></video>
+							
+						  </div>
+
 						<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
-						<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+						<!-- <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 						<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
 						<script type="text/javascript">
 							//<![CDATA[
@@ -692,17 +709,17 @@
 
 							});
 				//]]>
-						</script>
+						</script> -->
 						<!-- //script for play-list -->
 
 						<!--//video-main-->
-						<!--/app_store-->
-						<div class="apps">
+						<!--/app_store-->	
+						<div class="col-md-12" id = "apps">
 							<h3 class="hd-tittle">Medea now available in</h3>
-							<div class="banner-button">
+							<div class="col-md-6 banner-button">
 								<a href="#"><img src="images/1.png" alt=""></a>
 							</div>
-							<div class="banner-button green-button">
+							<div class="col-md-6 banner-button green-button">
 								<a href="#"><img src="images/2.png" alt=""></a>
 							</div>
 							<div class="clearfix"></div>
@@ -942,10 +959,19 @@
 		<!-- -->
 		<!-- main content end-->
 	</section>
+<<<<<<< Updated upstream
 	<!------firebase scripts starts----->
 	<!-- add here -->
 	<!------firebase scripts end----->
 
+=======
+	<script src="./shaka_player/shaka-player/myapp.js"></script>
+	<script src="./shaka_player/shaka-player/dist/shaka-player.compiled.js"></script>
+<!------firebase scripts starts----->
+<!-- add here -->
+<!------firebase scripts end----->
+	
+>>>>>>> Stashed changes
 </body>
 
 </html>

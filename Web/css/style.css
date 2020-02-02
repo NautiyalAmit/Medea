@@ -1520,22 +1520,33 @@ h3.hd-tittle {
     margin-bottom: 1em;
 }
 /*--//pricing_table--*/
-.apps {
+#apps {
     background: #222;
-    padding: 2.3em 2em;
+    /* padding: 2.3em 2em;
     border-radius: 0.3em;
     -o-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    margin: 1.4em 0;
+    -moz-border-radius: 0.3em;	
+    -webkit-border-radius: 0.3em; */
+	height: 120px;
+	margin: 1.4em 0;
+	/* position:absolute; */  
+	top:50px ;
+	/* width: 100% */
+	; 
 }
-.banner-button {
+.container {  
+    display: grid;  
+    grid-template-columns: 100px 100px 100px;  
+    grid-template-rows: 50px 50px;  
+}
+/* .banner-button {
     float: left;
        width: 45.8%;
 }
 .green-button {
-    margin: 0 1em;
-}
+	/* float: right; */
+	/* margin: 0 1em; */
+/* }  */
 /*--//music_right--*/
 /*--//albums--*/
 ul.footer_social {
@@ -1702,6 +1713,24 @@ img.media-object {
 		-moz-border-radius:4px;
 		-webkit-border-radius:4px;
 }
+#player {
+
+	width: 100%;
+	display: flex;
+  }
+
+  #player > video{
+
+	/* height: 300px; */
+	/* margin-top: 100px ; */
+	/* margin-left: 200px ;
+	margin-right: 200px ; */
+	width: 100%;
+	max-height: 100%;
+	/* line-height: 90px; */
+	/* text-align: center; */
+
+   }
 .coment-form textarea {
 	background: none;
   color: #999;
@@ -2900,7 +2929,7 @@ text-decoration:none;
 		padding: 2em 2em;
 	}
 	.apps {
-      padding: 2.3em 2em;
+		position:absolute;  top:350px
 	}
     div.jp-type-playlist div.jp-playlist a {
 		padding:22px 20px 22px 20px!important;
@@ -3227,7 +3256,7 @@ text-decoration:none;
 	}
 	.music-right {
 		float: left;
-		width: 65%;
+		width: 100%;
 		margin-left: 2%;
 	}
 	img#jp_poster_0 {
