@@ -45,8 +45,7 @@ h1, h2, h3, h4, h5 {
 .header_stats{
 	text-align: center;
 }
-/*-- w3layouts --*/
-/*-- agileits --*/
+
 .header_stats h3{
 	font-size: 12px;
 	font-weight: 600;
@@ -92,8 +91,7 @@ h1, h2, h3, h4, h5 {
     top: 0;
     left: 0;
 }
-/*-- w3l --*/
-/*-- agileits --*/
+
 .sticky-left-side {
     position: fixed;
     height: 100%;
@@ -145,8 +143,7 @@ div#page-wrapper {
 	   font-family: 'MavenPro-Regular';
 	font-weight:700;
 }
-/*-- w3layouts --*/
-/*-- agileits --*/
+
 .logo-icon a:hover{
 	color:#fff;
 }
@@ -201,8 +198,7 @@ div#page-wrapper {
     font-size: 15px;
     margin: 5px 0 0 0;
 }
-/*-- w3l --*/
-/*-- agileits --*/
+
 .left-side .logged-user .media-body h4 a {
     color: #fff;
 }
@@ -444,8 +440,7 @@ h5.left-nav-title {
     border-width: 6px;
     margin-top: -6px;
 }
-/*-- w3layouts --*/
-/*-- agileits --*/
+
 .left-side-collapsed .custom-nav li.active a span {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -2854,9 +2849,7 @@ ul.side-icons li a.goog{
 ul.side-icons li a.drib{
  background:url('../images/icons.png') no-repeat -78px 0px;
 }
-/*-- w3l-agile --*/
-/*-- agileits --*/
-/*-- //error--*/
+
 .error-top{
 	margin:0 auto;
 	text-align:center;
@@ -2889,9 +2882,7 @@ a.not {
 .inner-info a:hover {
 text-decoration:none;
 }
-/*-- w3l-agile --*/
-/*-- agileits --*/
-/*---responsive-----*/
+
 @media (max-width:1600px){
 	.content-grid {
 		width: 25%;
@@ -2988,8 +2979,7 @@ text-decoration:none;
 		margin-left: 70%;
 	}
 }
-/*-- w3l-agile --*/
-/*-- agileits --*/
+
 @media (max-width:1366px){
 	.content-grid {
 		width: 23.5%;
@@ -3211,8 +3201,7 @@ text-decoration:none;
 		text-decoration: none;
 	}
 }
-/*-- w3l-agile --*/
-/*-- agileits --*/
+
 @media (max-width:991px){
 	.music-left {
 		float: left;
@@ -3337,8 +3326,7 @@ text-decoration:none;
 		padding: 8px 13px;
 	}
 }
-/*-- w3l-agile --*/
-/*-- agileits --*/
+
 @media (max-width:991px){
 	.music-right {
 		float: left;

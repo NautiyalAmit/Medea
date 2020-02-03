@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -50,13 +50,14 @@
 	<!--------------------------------------------------------PWA SCRIPTS ends----------------------------------------------------->
 
 	<!-----add manifest file for PWA-->
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="manifest.json">
 
 
 </head>
 <!-- /head layout  -->
 
-<body class="sticky-header left-side-collapsed">
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+
 	<!--add main js file for pwa-->
 	<script src="js/main.js"></script>
 	<section>
@@ -79,7 +80,7 @@
 					<li class="active"><a href="index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
 					<li><a href="#" data-toggle="modal" data-target="#myModal1"><i
 								class="fa fa-th"></i><span>Apps</span></a></li>
-					<li><a href="radio.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
+					<li><a href="browse.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
 					<li><a href="browse.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>
 					<li class="menu-list"><a href="browse.html"><i class="lnr lnr-indent-increase"></i>
 							<span>Browser</span></a>
@@ -91,7 +92,7 @@
 					<li><a href="blog.html"><i class="lnr lnr-book"></i><span>Blog</span></a></li>
 					<li class="menu-list"><a href="#"><i class="lnr lnr-heart"></i> <span>My Favourities</span></a>
 						<ul class="sub-menu-list">
-							<li><a href="radio.html">All Songs</a></li>
+							<li><a href="browse.html">All Songs</a></li>
 						</ul>
 					</li>
 
@@ -132,7 +133,7 @@
 			</div>
 		</div>
 		<!-- //app-->
-		<!-- /w3l-agile -->
+		<!-- / -->
 		<!-- signup -->
 		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
@@ -177,7 +178,7 @@
 			</div>
 		</div>
 		<!-- //signup -->
-		<!-- /w3l-agile -->
+		<!-- / -->
 		<!-- left side end-->
 		<!-- main content start-->
 		<div class="main-content">
@@ -293,35 +294,32 @@
 									<ul class="rslides callbacks callbacks1" id="slider4">
 										<li>
 											<div class="banner-img">
-												<img src="images/11.jpg" class="img-responsive" alt="">
+												<img src="images/111.jpg" class="img-responsive" alt="">
 											</div>
 											<div class="banner-info">
 												<a class="trend" href="single.html">TRENDING</a>
-												<h3>Let Your Home</h3>
-												<p>Album by <span>Rock star</span></p>
+
 											</div>
 
 										</li>
 										<li>
 											<div class="banner-img">
-												<img src="images/22.jpg" class="img-responsive" alt="">
+												<img src="images/222.jpg" class="img-responsive" alt="">
 											</div>
 											<div class="banner-info">
 												<a class="trend" href="single.html">TRENDING</a>
-												<h3>Charis Brown feet</h3>
-												<p>Album by <span>Rock star</span></p>
+
 											</div>
 
 
 										</li>
 										<li>
 											<div class="banner-img">
-												<img src="images/33.jpg" class="img-responsive" alt="">
+												<img src="images/333.jpg" class="img-responsive" alt="">
 											</div>
 											<div class="banner-info">
 												<a class="trend" href="single.html">TRENDING</a>
-												<h3>Let Your Home</h3>
-												<p>Album by <span>Rock star</span></p>
+
 											</div>
 
 											<!-- -->
@@ -773,7 +771,7 @@
 				</div>
 				<!--//music-right-->
 				<div class="clearfix"></div>
-				<!-- /w3l-agile-its -->
+				<!-- / -->
 			</div>
 			<!--body wrapper start-->
 
@@ -908,9 +906,9 @@
 				<h3>Navigation</h3>
 				<ul class="list1">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="radio.html">All Songs</a></li>
+					<li><a href="browse.html">All Songs</a></li>
 					<li><a href="browse.html">Albums</a></li>
-					<li><a href="radio.html">New Collections</a></li>
+					<li><a href="browse.html">New Collections</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -946,6 +944,10 @@
 	<!-- add here -->
 	<!------firebase scripts end----->
 
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.js"></script>
 </body>
 
 </html>
