@@ -518,7 +518,7 @@ ul.nav li a span {
 -----------------------------*/
 
 .header-section {
-    background:#45B39D;
+    background:rgb(99, 100, 100);
     box-shadow: 1px 0 3px rgba(0,0,0,.15);
     -webkit-box-shadow: 1px 0 3px rgba(0,0,0,.15);
     -moz-box-shadow: 1px 0 3px rgba(0,0,0,.15);
@@ -551,7 +551,7 @@ ul.nav li a span {
 }
 
 .toggle-btn:hover {
-    background:#EA57A3;
+    background:rgb(175, 173, 174);
     color: #fff;
 }
 
@@ -591,8 +591,8 @@ ul.nav li a span {
     left: 0;
     width: 200px;
     z-index: 100;
-    background: #EA57A3;
-    border-bottom: 1px solid #5F45BB;
+    background: rgb(207, 24, 24);
+    border-bottom: 1px solid rgb(242, 241, 243);
     text-align: center;
         padding: 1.1em 0 1.2em;
 }
@@ -1198,7 +1198,7 @@ fieldset#body {
   
 }
 #loginForm #login:hover{
-     background:#EA57A3;
+     background:rgb(177, 33, 69);
 }
 #loginForm input {
    width: 100%;
@@ -1208,8 +1208,9 @@ fieldset#body {
   padding: 6px;
   font-size: 0.8125em;
   -webkit-apperance: none;
-  outline: none
+  outline: none;
   font-family: 'Open Sans', sans-serif;
+
 }
 #body label i {
   color: #000;

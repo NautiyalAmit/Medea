@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Medea| 404 :: Medea</title>
+	<title>Medea| Download :: Medea</title>
 	<meta name="theme-color" content="#317EFB" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,9 +21,16 @@
 	<link rel="stylesheet" href="css/icon-font.css" type='text/css' />
 	<!-- //lined-icons -->
 	<!-- Meters graphs -->
-	<script src="js/jquery-2.1.4.js"></script>
+	<script src="jsdownload/jquery-2.1.4.js"></script>
 	<!-----add manifest file for PWA-->
 	<link rel="manifest" href="manifest.json">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="jsdownload/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jsdownload/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="jsdownload/playlist.js"></script>
 
 
 </head>
@@ -31,7 +38,7 @@
 
 <body class="sticky-header left-side-collapsed" onload="initMap()">
 	<!--add main js file for pwa-->
-	<script src="js/main.js"></script>
+	<script src="jsdownload/main.js"></script>
 	<section>
 		<!-- left side start-->
 		<div class="left-side sticky-left-side">
@@ -173,8 +180,8 @@
 							</div>
 						</div>
 						<!-- search-scripts -->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
+						<script src="jsdownload/classie.js"></script>
+						<script src="jsdownload/uisearch.js"></script>
 						<script>
 							new UISearch(document.getElementById('sb-search'));
 						</script>
@@ -207,7 +214,7 @@
 							</script>
 							<!--audio-->
 							<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
-							<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+							<script type="text/javascript" src="jsdownload/mediaelement-and-player.min.js"></script>
 							<!---->
 
 
@@ -256,9 +263,70 @@
 			<!-- //header-ends -->
 			<div id="page-wrapper">
 				<div class="inner-content">
+					
+<div id="jp_container_1" class="jp-video jp-video-270p">
+	<div class="jp-type-playlist">
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div class="jp-gui">
+			<div class="jp-video-play">
+				<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+			</div>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time"></div>
+				<div class="jp-duration"></div>
+				<div class="jp-title">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-controls-holder">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1" >play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+						<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+					</ul>
+				</div>
+			</div>                   
+		</div>
+		<div><a href="javascript:;" id="downloadaudiotool" target="_blank" class="button gray medium">DOWNLOAD </a></div>
+		<div class="jp-playlist">
+			<ul>
+				<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+				<li></li>
+			</ul>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+	</div>
+	</li>
 
 					<!-- /error_page -->
-					<div class="error-top">
+					<!-- <div class="error-top">
 						<img src="images/pic_error.png" alt="" />
 						<h3>Page Not Found...<h3>
 								<div class="clearfix"></div>
@@ -268,7 +336,7 @@
 								</div>
 
 								<!-- //error_page -->
-					</div>
+					</div> -->
 
 					<div class="clearfix"></div>
 					<!--body wrapper end-->
@@ -318,11 +386,11 @@
 		<!-- main content end-->
 	</section>
 
-	<script src="js/jquery.nicescroll.js"></script>
+	<script src="jsdownload/jquery.nicescroll.js"></script>
 
-	<script src="js/scripts.js"></script>
+	<script src="jsdownload/scripts.js"></script>
 	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.js"></script>
+	<script src="jsdownload/bootstrap.js"></script>
 </body>
 
 </html>
