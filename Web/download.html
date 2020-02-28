@@ -3,6 +3,8 @@
 
 <head>
 	<title>Medea| Download :: Medea</title>
+	<!-----add manifest file for PWA-->
+	<link rel="manifest" href="manifest.json">
 	<meta name="theme-color" content="#317EFB" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,15 +24,9 @@
 	<!-- //lined-icons -->
 	<!-- Meters graphs -->
 	<script src="jsdownload/jquery-2.1.4.js"></script>
-	<!-----add manifest file for PWA-->
-	<link rel="manifest" href="manifest.json">
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	
-<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script type="text/javascript" src="jsdownload/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="jsdownload/jplayer.playlist.min.js"></script>
-<script type="text/javascript" src="jsdownload/playlist.js"></script>
 
 
 </head>
@@ -268,62 +264,54 @@
 	<div class="jp-type-playlist">
 		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 		<div class="jp-gui">
-			<div class="jp-video-play">
-				<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+			<!------------------------------------shaka code -------------------------------------->
+
+			<!-- Shaka Player compiled library: -->
+			<script src="./shaka-player/dist/shaka-player.compiled.js"></script>
+			<!-- Your application source: -->
+			<script src="amit_my_app.js"></script>
+		
+			<style>
+			  table, th, td {
+				border: 1px solid black;
+			  }
+			</style>
+			<!------------------ Shaka Player compiled library ends------------------------------------- -->
+			
+			<div id='online-signal' style='width:640px;text-align:center'></div>
+			<div>
+			  <div>
+				
+				<span style="width:120px;display:inline-block">Video Name</span>
+				<input id="asset-title-input" type="text" style="width:500px" value="Star Trek: Angel One">
+			  </div>
+			  <div>
+				<span style="width:120px;display:inline-block">Video Manifest</span>
+				<input id="asset-uri-input"   style="width:500px" value="//storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+			  </div>
 			</div>
-			<div class="jp-interface">
-				<div class="jp-progress">
-					<div class="jp-seek-bar">
-						<div class="jp-play-bar"></div>
-					</div>
-				</div>
-				<div class="jp-current-time"></div>
-				<div class="jp-duration"></div>
-				<div class="jp-title">
-					<ul>
-						<li></li>
-					</ul>
-				</div>
-				<div class="jp-controls-holder">
-					<ul class="jp-controls">
-						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
-						<li><a href="javascript:;" class="jp-play" tabindex="1" >play</a></li>
-						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-					</ul>
-					<div class="jp-volume-bar">
-						<div class="jp-volume-bar-value"></div>
-					</div>
-					<ul class="jp-toggles">
-						<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
-						<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
-						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-					</ul>
-				</div>
-			</div>                   
+		
+			<div>
+			  <span><progress id="progress-bar" value="0" max="100"></span>
+			  <span><button id="download-button">Download</button></span>
+			</div>
+		
+			<video id="video"
+				   width="640"
+				   poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+				   controls autoplay></video>
+		
+			<table id="content-table" style="width:640px"></table>
+			  <!------------------------------------shaka code ends -------------------------------------->
+			
+					
 		</div>
-		<div><a href="javascript:;" id="downloadaudiotool" target="_blank" class="button gray medium">DOWNLOAD </a></div>
-		<div class="jp-playlist">
-			<ul>
-				<!-- The method Playlist.displayPlaylist() uses this unordered list -->
-				<li></li>
-			</ul>
-		</div>
-		<div class="jp-no-solution">
-			<span>Update Required</span>
-			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-		</div>
+		
 	</div>
 </div>
 </div>
-	</div>
-	</div>
-	</li>
+	
+	
 
 					<!-- /error_page -->
 					<!-- <div class="error-top">
@@ -336,7 +324,7 @@
 								</div>
 
 								<!-- //error_page -->
-					</div> -->
+					</div> 
 
 					<div class="clearfix"></div>
 					<!--body wrapper end-->

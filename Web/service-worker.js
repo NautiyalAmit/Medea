@@ -3,10 +3,10 @@ const CacheName = 'v1';
 const assets = [
   '/',
   '/Web/index.html',
-  '/Web/404.html',
   '/Web/blog.html',
   '/Web/browse.html',
   '/Web/single.html',
+  '/Web/download.html',
   '/Web/css/audio.css',
   '/Web/css/bootstrap.css',
   '/Web/css/easy-responsive-tabs.css',
@@ -62,4 +62,3 @@ self.addEventListener('fetch', e => {
   e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
 
 });
-
