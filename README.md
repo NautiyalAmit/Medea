@@ -24,6 +24,9 @@ https://developers.google.com/web/progressive-web-apps/
 https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa
 https://pwa.rocks
 
-
+### Steps to run the project:
+#### Step 1. The project can be downloaded from **https://github.com/NautiyalAmit/Medea.git** 
+#### Step 2. Checkout to master branch and make sure that you have the latest code using git pull. 
+#### Step 3. Import the code to any IDE  like visual code and  run the index file inside the Web folder.
 
 
